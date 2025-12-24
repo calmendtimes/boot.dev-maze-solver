@@ -4,8 +4,8 @@ from line import Line
 class Window:
 
     def __init__(self, width, height):
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
         self.__root = Tk()
         self.__root.title("maze solver")
         self.__canvas = Canvas(self.__root, bg="white", height=height, width=width)

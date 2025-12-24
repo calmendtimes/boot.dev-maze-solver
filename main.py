@@ -1,13 +1,9 @@
 from window import Window
-from cell import Cell
+from maze import Maze
 
 def main():
     win = Window(800, 600)
-    c1 = Cell(win)
-    c1.draw(111,111,222,222)
-    c2 = Cell(win)
-    c2.draw(444,444,555,555)
-    c1.draw_move(c2)
+    maze = Maze(0,0, 25,35, 20,20, win)
     win.wait_for_close()
 
 
